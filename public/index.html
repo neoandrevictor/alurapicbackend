@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" ng-app="alurapic">
 
 <head>
     <meta charset="UTF-8">
@@ -9,13 +9,15 @@
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <script src="js/lib/angular.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/controllers/fotos-controller.js"></script>
+
 
 </head>
 
-<body>
+<body ng-controller="FotosController">
     <div class="container">
         <h1 class="text-center">Alurapic</h1>
-        <img src="https://pt.wikipedia.org/wiki/Ficheiro:Lion_(Panthera_leo)_(30941994012).jpg" alt="Leão">
+        <img class="img-responsive center-block" src="{{foto.url}}" alt="{{foto.titulo}}">
     </div> <!-- fim container -->
 </body>
 
